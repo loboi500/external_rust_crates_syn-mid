@@ -1,31 +1,3 @@
-[package]
-name = "syn-mid"
-version = "0.5.3"
-authors = ["Taiki Endo <te316e89@gmail.com>"]
-edition = "2018"
-license = "Apache-2.0 OR MIT"
-repository = "https://github.com/taiki-e/syn-mid"
-documentation = "https://docs.rs/syn-mid"
-keywords = ["syn", "macros"]
-categories = ["development-tools::procedural-macro-helpers"]
-readme = "README.md"
-exclude = ["/.github", "/scripts"]
-description = """
-Providing the features between \"full\" and \"derive\" of syn.
-"""
-
-[package.metadata.docs.rs]
-all-features = true
-targets = ["x86_64-unknown-linux-gnu"]
-
-[workspace]
-members = ["examples/const_fn", "examples/const_fn_test"]
-
-[features]
-clone-impls = ["syn/clone-impls"]
-
-# NB: proc-macro2, quote, and syn are public dependencies.
-[dependencies]
-proc-macro2 = { version = "1", default-features = false }
-quote = { version = "1", default-features = false }
-syn = { version = "1.0.44", default-features = false, features = ["parsing", "printing", "derive"] }
+version https://git-lfs.github.com/spec/v1
+oid sha256:a287e28ce7a406de773758c9a943ece34a4643a3c9cd164f78b08081510b29bb
+size 951
